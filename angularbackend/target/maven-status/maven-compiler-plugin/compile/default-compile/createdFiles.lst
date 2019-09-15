@@ -1,0 +1,6 @@
+com\pr\backend\AngularBackendApplication.class
+com\pr\backend\CorsFilter.class
+com\pr\backend\controller\entity\GridDataModelEntity.class
+com\pr\backend\controller\MainController.class
+com\pr\backend\controller\model\GridDataModel.class
+com\pr\backend\repository\jpa\DataGridRepository.class

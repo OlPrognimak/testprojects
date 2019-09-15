@@ -1,0 +1,5 @@
+com.pr.backend
+com.pr.backend.controller
+com.pr.backend.controller.entity
+com.pr.backend.controller.model
+com.pr.backend.repository.jpa

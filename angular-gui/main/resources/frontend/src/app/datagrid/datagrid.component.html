@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<button (click)="getSelectedRows()">Get Selected Rows</button>
+<ag-grid-angular
+  #agGrid
+  style="width: 500px; height: 500px;"
+  class="ag-theme-balham"
+  pagination="true"
+  (rowValueChanged)="onRowValueChanged($event)"
+  (cellValueChanged)="cellChanged($event)"
+  [rowData]="rowData | async"
+  [columnDefs]="columnDefs"
+  rowSelection="multiple">
+
+</ag-grid-angular>
+
+<div *ngIf = "getSelectedDataSize( this) ">
+  <p> the rows was selecreted</p>
+
+  <div *ngFor="let item of getSelectedData()">
+      <h1>Item: {{item.make}} </h1>
+  </div>
+
+
+</div>
+
+
