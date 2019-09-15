@@ -24,7 +24,7 @@ export class DataGridComponent implements OnInit,AfterViewInit{
     this.rowData = this.dataGridService.getDataFromServer();
 
 
-    document.onloadend = function () {
+    document.onload = function () {
       alert("Documet is Loaded");
 
     }
