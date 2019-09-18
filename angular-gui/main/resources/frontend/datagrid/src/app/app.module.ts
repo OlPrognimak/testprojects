@@ -8,16 +8,20 @@ import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import {DataGridComponent} from "./datagrid/datagrid.component";
 import {PrDataGridService} from "./datagrid/datagrid.service";
+import {PrimeDataGridComponent} from "./pdatagrid/pdatagrid.component";
+import { TableModule } from 'primeng/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DataGridComponent,
-    PrDataGridService
+    PrDataGridService,
+    PrimeDataGridComponent
 
   ],
   imports: [
-    AgGridModule.withComponents(null), BrowserModule,HttpClientModule
+    AgGridModule.withComponents(null), BrowserModule,HttpClientModule,TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
