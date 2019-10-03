@@ -14,27 +14,23 @@ export class DataGridComponent implements OnInit,AfterViewInit{
 
   rowData: any;
   documentIsLoaded:boolean = false;
-
+  title = 'Ng Data Grid';
   constructor( private dataGridService: PrDataGridService) {
 
    }
 
   ngOnInit(): void {
-    alert('Start DataGridComponent');
+    //alert('Start DataGridComponent');
     this.rowData = this.dataGridService.getDataFromServer();
 
 
     document.onload = function () {
-      alert("Documet is Loaded");
+     // alert("Documet is Loaded");
 
     }
   }
 
 
-
-
-
-  title = 'Tour of Heroes';
   @ViewChild('agGrid', { static: false, }) agGrid: AgGridAngular;
   columnDefs = [
     {headerName: 'Make', field: 'make', sortable: true, filter: true,checkboxSelection: true, editable: true},

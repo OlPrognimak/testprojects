@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+<h3>{{title}}</h3>
 <button (click)="getSelectedRows()">Get Selected Rows</button>
 <ag-grid-angular
   #agGrid
@@ -13,7 +13,7 @@
 
 </ag-grid-angular>
 
-<div *ngIf = "getSelectedDataSize( this) ">
+<div *ngIf = "getSelectedDataSize() ">
   <p> the rows was selecreted</p>
 
   <div *ngFor="let item of getSelectedData()">
