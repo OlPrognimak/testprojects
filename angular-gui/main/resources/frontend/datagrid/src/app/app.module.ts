@@ -11,7 +11,8 @@ import { TableModule } from 'primeng/table';
 import {AppRoutingModule,routingComponent} from "./app-routing.module";
 import {InputTextModule} from "primeng/primeng";
 import {FormsModule} from "@angular/forms";
-
+import {PrDataGridService} from "./datagrid/datagrid.service";
+import {EditableCell} from "./components/components.cell";
 
 
 
@@ -19,7 +20,9 @@ import {FormsModule} from "@angular/forms";
   declarations: [
     AppComponent,
     DataGridComponent,
-    routingComponent
+    PrDataGridService,
+    routingComponent,
+    EditableCell
 
   ],
   imports: [

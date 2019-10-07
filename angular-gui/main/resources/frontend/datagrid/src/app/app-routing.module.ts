@@ -4,7 +4,7 @@ import {DataGridComponent} from "./datagrid/datagrid.component";
 import {PrimeDataGridComponent} from "./pdatagrid/pdatagrid.component";
 
 const routes: Routes = [
-    {path: 'ng-data-table', component: DataGridComponent},
+    {path: 'ng-data-table',  component: DataGridComponent},
     {path: 'prime-data-table', component: PrimeDataGridComponent}
   ];
 

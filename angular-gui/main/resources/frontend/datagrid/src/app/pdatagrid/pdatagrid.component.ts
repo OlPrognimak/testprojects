@@ -14,6 +14,7 @@ import {GridData} from "../domain/domain.car";
 export class PrimeDataGridComponent implements OnInit {
   title = 'Prime Data Grid';
   gridData: GridData[];
+  expandedRows: any;
 
   constructor(private carService: PTableDataGridService) { }
 
